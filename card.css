@@ -41,9 +41,13 @@ body {
   height: 400px;
   
 }
-.text{
-  
-  text-align:center;
+.name {
+    padding: 50px;
+    text-align: center;
+}
+.localitation {
+    text-align:start;
+    text-align: center;
 }
 .footer{
   width: 450px;

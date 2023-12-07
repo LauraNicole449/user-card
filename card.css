@@ -38,16 +38,36 @@ body {
 
 .card-content{
   width: 450px;
-  height: 400px;
+  height: 450px;
   
 }
 .name {
-    padding: 50px;
+    padding-top: 65px;
     text-align: center;
+    margin:0;
+    font-size:40px;
 }
 .localitation {
-    text-align:start;
     text-align: center;
+    margin-top:0px;
+    font-size:20px;
+    font-style:italic;
+}
+.description {
+    padding-top: 10px;
+    text-align: justify;
+    margin:35px;
+    font-size:20px;
+}
+.boton {
+    height: 45px;
+    width: 11vh;
+    background-color: white;
+    margin-left: 175px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px 40px 40px 40px;
 }
 .footer{
   width: 450px;

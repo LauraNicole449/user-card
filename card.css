@@ -7,10 +7,24 @@ body {
   align-items: center;
 }
 
+.generator-table {
+    
+    width: 350px;
+    height: 450px;
+   
+    background-color: white;
+    position: absolute;
+    left:5%;
+    top: 20%;
+    
+}
+
+
 .card{
   background: white;
   box-shadow: inset 2px;
   border-radius: 2%;
+
 }
 
 .header {

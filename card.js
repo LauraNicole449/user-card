@@ -27,6 +27,22 @@ function uploadAvatar() {
 function changeDescription(){
     let text = document.getElementById("change-description").value;
     document.getElementById("description").textContent = text;
-    
-  
 }
+function changeOption(optionToShow) {
+    var tableOptions = document.getElementById("generator-table-options");
+    var imagesOptions = document.getElementById("images-options");
+    var textOptions = document.getElementById("text-options");
+    
+    if (optionToShow === 'images-options') {
+        tableOptions.style.display = "block";
+        imagesOptions.style.display = "block";
+        textOptions.style.display = "none";
+    } 
+    if (optionToShow === 'text-options') {
+        tableOptions.style.display = "block";
+        imagesOptions.style.display = "none";
+        textOptions.style.display = "block";
+    }
+   
+}
+

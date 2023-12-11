@@ -6,46 +6,53 @@
         <link rel="js" href="card.js">
         <script href="card.js" src="card.js"></script>
     </head>
-
     <body>
         <div class="generator-table">
-            <p>
-                Banner
-                <span>
-                    <input id="change-banner" type="file" accept="image/*">
-                    <input id="change-banner-submit" type="submit" value="Change" onClick="uploadBanner()">
-                </span>
-            </p>
-                Avatar
-                <span>
-                    <input id="change-avatar" type="file" accept="image/*">
-                    <input id="change-avatar-submit" type="submit" value="Change" onClick="uploadAvatar()">
-                </span>
-            </p>
-            <p>
-                Name
-                <span>
-                    <input id="change-name">
-                    <input type="submit" value="Change" onClick="changeName()">
-                </span>
-            </p>
-            </p>
-                Description
-                <span>
-                    <input id="change-description">
-                    <input type="submit" value="Change" onClick="changeDescription()">
-                </span>
-            </p>
+            <div > 
+                <button onclick="changeOption('images-options')"class="options-buttons" >Replace images</button>
+                <button onclick="changeOption('text-options')" class="options-buttons" >Replace text</button>
+            </div>
+            <div id="generator-table-options"  class="generator-table-options" style="display: none;">
+                <div id="images-options" style="display: none;">
+                    <div class="options">
+                        Banner
+                        <span>
+                            <input id="change-banner" type="file" accept="image/*">
+                            <input id="change-banner-submit" type="submit" value="Change" onClick="uploadBanner()">
+                        </span>
+                    </div>
+                    <div class="options" >
+                        Avatar
+                        <span>
+                            <input id="change-avatar" type="file" accept="image/*">
+                            <input id="change-avatar-submit" type="submit" value="Change" onClick="uploadAvatar()">
+                        </span>
+                    </div>
+                </div>
+                <div id="text-options" style="display: none;">
+                    <div class="options" >
+                        Name
+                        <span>
+                            <input id="change-name">
+                            <input type="submit" value="Change" onClick="changeName()">
+                        </span>
+                    </div>
+                    <div class="options" >
+                        Description
+                        <span>
+                            <input id="change-description">
+                            <input type="submit" value="Change" onClick="changeDescription()">
+                        </span>
+                    </div>   
+                </div>       
+                </div>
+            </div> 
         </div>
-        
-
-
         <div class="card">
             <div class="header">
                 <img id="banner" src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FtaW5nJTIwa2V5Ym9hcmR8ZW58MHx8MHx8fDA%3D" class="photo" />
                 <img id="avatar" src="https://cdn.juegosarea.com/an/im/anime-avatar-design-d.jpg" class="avatar" />
             </div>
-
             <div class="card-content">
                 <h2 class="name" id="name">
                     Nicole
@@ -58,9 +65,7 @@
                     Nicole es una desarrolladora web y streamer de codigo que disfruta trabajando con tecnologias HTML, CSS Y Javascript, al que le encantan los juegos de 8 bits, las aventuras gráficas. Y los gatos (hay que caerles bien antes de que nos dominen).
                 </p>
                 <button type="button" id="btn" class="boton" onClick="doTask()">FOLLOW</button>
-
             </div>
-
             <div class="footer">
                 <div class="footer-item">
                     Posts<span>
@@ -68,14 +73,12 @@
                         1200
                     </span>
                 </div>
-
                 <div class="footer-item footer-item-middle">
                     Followers<span>
                         <img width="14" height="14" src="https://img.icons8.com/material-outlined/24/person-male.png" alt="person-male" />
                         1200
                     </span>
                 </div>
-
                 <div class="footer-item">
                     Following<span>
                         <img width="14" height="14" src="https://img.icons8.com/material-outlined/24/person-male.png" alt="person-male" />

@@ -6,37 +6,51 @@ body {
   justify-content:center;
   align-items: center;
 }
+/*generator table*/
 .generator-table {   
-  width: 550px;
+  width: 250px;
   height: 450px;
   background-color: white;
   position: absolute;
   left:2%;
   top: 20%;  
-  
+}
+.options-buttons{
+  display: flex;
+  flex-direction:column; /* Establece la dirección como columna */
+  align-items: flex-start;
+  margin:15px;
+}
+.generator-table-options{
+  width: 350px;
+  height: 450px;
+  background-color:chocolate;
+  position:absolute;
+  left:250px;
+  top:0;
+}
+.options{
+  margin:10px;
 }
 
+/*card*/
 .card{
   background: white;
   position:absolute;
   left:55%;
   box-shadow: inset 2px;
   border-radius: 2%;
-  
 }
-
 .header {
   position: relative;
   border-bottom: 4px solid purple;
 }
-
 .photo{
   display: grid;
   width: 450px;
   height: 150px;
   border-radius: 2% 2%  0% 0%;
 }
-
 .avatar {
   position: absolute;
   left: 50%;
@@ -49,7 +63,7 @@ body {
 }
 .card-content{
   width: 450px;
-  height: 450px;
+  min-height: 450px;
 }
 .name {
   padding-top: 65px;
@@ -68,12 +82,14 @@ body {
   text-align: justify;
   margin:35px;
   font-size:20px;
+  word-wrap: break-word;
 }
 .boton {
   height: 45px;
   width: 11vh;
   background-color: white;
   margin-left: 175px;
+  margin-bottom:15px;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -87,7 +103,6 @@ body {
   justify-content:space-between;
   align-items:center;
   border-top:1px solid grey;
-  
 }
 .footer-item{
   display:flex;
